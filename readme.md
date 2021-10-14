@@ -4,7 +4,7 @@ aliveDomain SaaS Landing Page Template is a responsive website template that has
 
 - Hero
 - Features
-- Who we help?
+- Who we help
 - How it works
 - Pricing
 
