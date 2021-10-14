@@ -1,0 +1,56 @@
+.pricing {
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+        background-color: var(--color-primary-light);
+        z-index: -1;
+
+        @include mq() {
+            height: 30%;
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2.5rem;
+    }
+
+    &__title {
+        font-size: var(--font-size-title);
+        font-weight: var(--font-extrabold);
+        line-height: var(--line-height);
+        margin-bottom: 1.5rem;
+    }
+
+    &__subtitle {
+        font-size: var(--font-size-subtitle);
+        line-height: var(--line-height-text);
+        color: var(--color-text);
+        margin-bottom: 1.75rem;
+    }
+
+    &-card-wrapper {
+        display: grid;
+        row-gap: 4rem;
+
+        @include mq() {
+            row-gap: none;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 4rem;
+            justify-items: center;
+            align-items: end;
+        }
+
+        @include mq('desktop') {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

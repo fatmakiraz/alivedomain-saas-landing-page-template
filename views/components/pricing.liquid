@@ -1,0 +1,18 @@
+<section class="section pricing" id="pricing">
+    <div class="container">
+        <div class="pricing-wrapper">
+            {% include 'global/section-name', sectionName: 'Pricing' %}
+            <div class="pricing__title">
+                Pricing plans <mark class="text-bg-color">for businesses of all sizes</mark>
+            </div>
+            <div class="pricing__subtitle">Try free for 14 days · No credit card required · Contact us for monitoring more domains </div>
+            {% include 'global/button' with modifier: 'primary' title: 'Start Free Trial' %}
+        </div>
+        {% include 'global/countdown' %}
+        <div class="pricing-card-wrapper">
+            {% for package in packages %}
+            {% include 'global/pricing-card' %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,33 @@
+.features {
+    &__top {
+        margin-bottom: var(--section-spacing);
+
+        &__title {
+            font-size: var(--font-size-title);
+            font-weight: var(--font-extrabold);
+            line-height: var(--line-height);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        &__subtitle {
+            font-size: var(--font-size-subtitle);
+            text-align: center;
+            color: var(--color-text);
+        }
+    }
+
+    &__card-wrapper {
+        display: grid;
+        row-gap: 3rem;
+
+        @include mq() {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 3rem;
+        }
+
+        @include mq('desktop') {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

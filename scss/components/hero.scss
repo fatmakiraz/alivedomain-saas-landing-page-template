@@ -1,0 +1,58 @@
+.hero {
+
+    &__content {
+        line-height: var(--line-height);
+        text-align: center;
+        max-width: 80%;
+        margin: calc(var(--section-spacing) * 2) auto var(--section-spacing);
+
+        @include mq() {
+            margin: calc(var(--section-spacing) * 2) auto;
+        }
+
+        &__title {
+            font-size: 2.75rem;
+            font-weight: var(--font-black);
+
+            @include mq() {
+                font-size: 3.5rem;
+            }
+        }
+
+        &__subtitle {
+            font-size: 1.35rem;
+            font-weight: var(--font-regular);
+            line-height: var(--line-height-text);
+            color: var(--color-text);
+            margin-top: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__dashboard {
+        position: relative;
+        display: none;
+        text-align: center;
+
+        @include mq() {
+            display: block;
+        }
+
+        img {
+            width: 75%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5.5rem;
+            width: 100%;
+            height: 70%;
+            background-color: var(--color-primary-light);
+            z-index: -1;
+        }
+    }
+}

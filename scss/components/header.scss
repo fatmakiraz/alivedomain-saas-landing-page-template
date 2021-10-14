@@ -1,0 +1,100 @@
+.header {
+    position: relative;
+    background-color: #FFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem .75rem;
+
+    @include mq('desktop') {
+        padding: .75rem .5rem;
+    }
+
+    &.fixed-header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+
+        &.is-show {
+
+            .header__nav-wrapper {
+                right: 0;
+                opacity: 1;
+            }
+
+            .header__mobile-button {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    &__mobile-button {
+        padding: unset;
+        margin-left: auto;
+
+        @include mq('desktop') {
+            display: none;
+        }
+    }
+
+    &__nav-wrapper {
+        position: absolute;
+        top: 100%;
+        right: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #FFF;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 1rem 2.25rem 2.5rem;
+        transition: var(--transition);
+        opacity: 0;
+
+        @include mq('desktop') {
+            position: static;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-grow: 1;
+            width: unset;
+            border: none;
+            padding: unset;
+            opacity: 1;
+            margin-left: 2.5rem;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2.25rem;
+
+        @include mq('desktop') {
+            display: block;
+            margin-bottom: 0;
+        }
+
+        &__link {
+            font-size: 1.25rem;
+            font-weight: var(--font-semibold);
+            letter-spacing: var(--letter-spacing);
+
+            @include mq('desktop') {
+                font-size: 1rem;
+            }
+
+            &+& {
+                margin-top: 2rem;
+
+                @include mq('desktop') {
+                    margin-top: 0;
+                    margin-left: 1.25rem;
+                }
+            }
+        }
+    }
+}

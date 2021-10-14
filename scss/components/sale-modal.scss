@@ -1,0 +1,37 @@
+.sale-modal {
+    position: fixed;
+    letter-spacing: var(--letter-spacing);
+    text-align: center;
+    left: 3rem;
+    bottom: 3rem;
+    background-color: #FFF;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    z-index: 2;
+    padding: 1.35rem 2.7rem;
+    display: none;
+
+    &.is-show {
+        display: block;
+    }
+
+    .icon-close {
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
+        cursor: pointer;
+    }
+
+    &__title {
+        font-weight: var(--font-semibold);
+        margin-top: .75rem;
+        margin-bottom: 1.35rem;
+    }
+
+    &__subtitle {
+        font-size: var(--font-size-subtitle);
+        font-weight: var(--font-medium);
+        text-transform: uppercase;
+        margin-bottom: 1.35rem;
+    }
+}

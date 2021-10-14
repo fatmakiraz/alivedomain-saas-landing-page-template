@@ -1,0 +1,9 @@
+{% if type == 'a' %}
+<a href="#{{href}}" class="button button--{{modifier}}" title="{{title}}">
+    {{title}}
+</a>
+{% else %}
+<button type="button" class="button button--{{modifier}}" aria-label="{{title}}">
+    {{title}}
+</button>
+{% endif %}

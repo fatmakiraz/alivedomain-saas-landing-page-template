@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>aliveDomain | Domain Monitoring Platform</title>
+	<meta name="description" content="aliveDomain is a monitoring platform tracks the expiry date of domains.">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	{% include 'svg' %}
+	{% include 'header' %}
+	<main class="main">
+		{% include 'hero' %}
+		{% include 'features' %}
+		{% include 'who-we-help' %}
+		{% include 'how-it-works' %}
+		{% include 'pricing' %}
+	</main>
+    {% include 'global/sale-modal' %}
+	{% include 'footer' %}
+	<script src="js/main.js"></script>
+	<script src="js/countdown.js"></script>
+</body>
+
+</html>

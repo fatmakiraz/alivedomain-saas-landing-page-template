@@ -1,0 +1,36 @@
+<header class="header fixed-header">
+    <div class="container">
+        <div class="header-wrapper js-headerWrap">
+            <a href="#home" title="aliveDomain">
+                <figure class="header__logo">
+                    <img src="img/logo.svg" alt="aliveDomain Logo">
+                </figure>
+            </a>
+            <div class="header__nav-wrapper">
+                <nav class="header__nav">
+                    <a href="#features" class="header__nav__link link" title="Features">
+                        Features
+                    </a>
+                    <a href="#wwh" class="header__nav__link link" title="Who We Help">
+                        Who We Help
+                    </a>
+                    <a href="#hiw" class="header__nav__link link" title="How It Works">
+                        How It Works
+                    </a>
+                    <a href="#pricing" class="header__nav__link link" title="Pricing">
+                        Pricing
+                    </a>
+                </nav>
+                <div class="header__buttons">
+                    {% include 'global/button' with type: 'a', modifier: 'secondary', title: 'Log in' %}
+                    {% include 'global/button' with type: 'a', modifier: 'primary', title: 'Get Free Trial' %}
+                </div>
+            </div>
+            <button type="button" class="button header__mobile-button js-mobileMenuToggle" aria-label="Mobile Menu Button">
+                <svg class="icon icon-menu">
+                    <use xlink:href="#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>

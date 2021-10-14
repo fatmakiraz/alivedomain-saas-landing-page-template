@@ -1,0 +1,19 @@
+@mixin mq($screen: "tablet") { 
+    @if($screen == "tablet") {
+        @media (min-width: 48rem) {
+            @content
+        }
+    } @else if($screen == 'desktop') {
+        @media (min-width: 62rem) {
+            @content 
+        }
+    } @else if($screen == "large") {
+        @media (min-width: 75rem) {
+            @content
+        }
+    } @else if($screen == "extra") {
+        @media (min-width: 87.5rem) {
+            @content
+        }
+    }
+}

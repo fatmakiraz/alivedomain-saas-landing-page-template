@@ -1,0 +1,21 @@
+<div class="pricing__card{% if package.class %} pricing__card--{{package.class}}{% endif %}">
+    <div class="pricing__card__title">{{package.title}}</div>
+    <div class="pricing__card__subtitle">{{package.subtitle}}</div>
+    <div class="pricing__card__price">
+        <div class="pricing__card__price__discounted">{{package.discountedPrice}}</div>
+        <div class="pricing__card__price__month">/mo</div>
+    </div>
+    <div class="pricing__card__sale">
+        <div class="pricing__card__sale__old-price">{{package.price}}</div>
+        <mark class="pricing__card__sale__rate text-bg-color text-bg-color--secondary">Save {{package.discountRate}}</mark>
+    </div>
+    <div class="pricing__card__features">
+        {% for feature in package.features %}
+        {% include 'global/features-item' with desc: feature.title, highlighted: feature.highlighted, bold: feature.bold %}
+        {% endfor %}
+    </div>
+    <div class="pricing__card__cta">
+        {% assign  title =  "Start " | append: package.title %}
+        {% include 'global/button' with modifier: "primary" %}
+    </div>
+</div>

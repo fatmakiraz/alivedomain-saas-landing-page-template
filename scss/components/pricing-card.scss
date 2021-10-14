@@ -1,0 +1,92 @@
+.pricing__card {
+    position: relative;
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2.5rem;
+
+    &--primary {
+        border: 5px solid var(--color-primary);
+    }
+
+    &--secondary {
+        border: 5px solid var(--color-primary-light);
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: var(--font-extrabold);
+        margin-bottom: .75rem;
+    }
+
+    &__subtitle {
+        font-size: 1rem;
+        font-weight: var(--font-medium);
+        letter-spacing: var(--letter-spacing);
+        color: var(--color-text);
+        margin-bottom: 1rem;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: .75rem;
+
+        &__discounted {
+            font-size: var(--font-size-title);
+            font-weight: var(--font-black);
+        }
+
+        &__month {
+            color: var(--color-text);
+        }
+    }
+
+    &__sale {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.75rem;
+
+        &__old-price {
+            --color-old-price: #9a9a9a;
+            font-size: 1.5rem;
+            font-weight: var(--font-extrabold);
+            text-decoration: line-through;
+            color: var(--color-old-price);
+        }
+
+        &__rate {
+            font-size: .875rem;
+            font-weight: var(--font-semibold);
+            text-transform: uppercase;
+            animation: bounce 1.4s ease-in-out infinite;
+            margin-left: 2rem;
+        }
+    }
+
+    &__features {
+        margin-bottom: 2rem;
+    }
+
+    &__cta {
+        text-align: center;
+    }
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.025);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

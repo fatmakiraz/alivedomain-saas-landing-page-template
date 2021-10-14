@@ -1,0 +1,84 @@
+{
+    "packages": [{
+            "title": "Personal",
+            "subtitle": "Best for individuals",
+            "discountedPrice": "$3.99",
+            "price": "$4.99",
+            "discountRate": "20%",
+            "features": [{
+                    "title": "Up to 50 domains",
+                    "highlighted": true
+                },
+                {
+                    "title": "Customizable Dashboard"
+                },
+                {
+                    "title": "Notifications through email"
+                },
+                {
+                    "title": "Notifications at 10 different times"
+                },
+                {
+                    "title": "Creating Custom Filters"
+                },
+                {
+                    "title": "Grouping Domains"
+                }
+            ]
+        },
+        {
+            "title": "Professional",
+            "subtitle": "Best for professionals",
+            "discountedPrice": "$15.99",
+            "price": "$19.99",
+            "discountRate": "20%",
+            "class": "primary",
+            "features": [{
+                    "title": "All Personal features",
+                    "bold": true
+                },
+                {
+                    "title": "Up to 250 domains",
+                    "highlighted": true
+                },
+
+                {
+                    "title": "Notifications through Zapier, Telegram, Slack, Discord, Webhook and Email"
+                },
+                {
+                    "title": "GoDaddy and Namecheap API Synchronization"
+                }
+            ]
+        },
+        {
+            "title": "Agency",
+            "subtitle": "Best for agencies",
+            "discountedPrice": "$39.99",
+            "price": "$49.99",
+            "discountRate": "20%",
+            "class": "secondary",
+            "features": [{
+                    "title": "All Professional features",
+                    "bold": true
+                },
+                {
+                    "title": "Up to 750 domains",
+                    "highlighted": true
+                },
+                {
+                    "title": "White Label Email Sending"
+                },
+
+                {
+                    "title": "Sending Notification to Customer's Email"
+                },
+                {
+                    "title": "Custom Email Template"
+                },
+                {
+                    "title": "Custom Business Branding"
+                }
+            ]
+        }
+    ]
+}

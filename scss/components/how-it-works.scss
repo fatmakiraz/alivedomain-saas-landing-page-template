@@ -1,0 +1,85 @@
+.hiw {
+
+    &-card-wrapper {
+        display: grid;
+        row-gap: 2rem;
+
+        @include mq('desktop') {
+            grid-template-columns: 50% 50%;
+            row-gap: unset;
+            place-items: center end;
+        }
+
+        &:nth-child(even) {
+
+            @include mq('desktop') {
+                .hiw__image {
+                    order: -1;
+                    justify-self: start;
+                    margin-left: 0;
+                    padding-left: 0;
+                }
+            }
+        }
+
+        &+& {
+            margin-top: var(--section-spacing);
+
+            @include mq('tablet') {
+                margin-top: calc(var(--section-spacing) * 2);
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+
+        .bg-points {
+            position: absolute;
+            top: -25px;
+            left: -25px;
+            opacity: .1;
+        }
+
+        &__title {
+            font-size: var(--font-size-title);
+            font-weight: var(--font-extrabold);
+            line-height: var(--line-height);
+            max-width: 95%;
+            margin-bottom: 1rem;
+        }
+
+        &__desc {
+            font-size: var(--font-size-subtitle);
+            line-height: var(--line-height-text);
+            color: var(--color-text);
+            margin-bottom: 1.5rem;
+
+            @include mq('desktop') {
+                max-width: 80%;
+            }
+        }
+    }
+
+    &__image {
+        max-width: 75%;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mq() {
+            max-width: 50%;
+        }
+
+        @include mq('desktop') {
+            max-width: 100%;
+            width: 85%;
+            padding: 0 1rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

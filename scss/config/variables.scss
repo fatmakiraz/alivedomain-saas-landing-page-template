@@ -1,0 +1,31 @@
+:root {
+    --font-family: 'Inter', sans-serif;
+    --font-size: .88rem;
+    --font-size-title: 2.5rem;
+    --font-size-subtitle: 1.25rem;
+    --max-width: 72rem;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+    --font-black: 900;
+    --color-primary: #635dff;
+    --color-secondary: #ee5d4a;
+    --color-primary-light: rgba(230, 229, 255, 1);
+    --color-text: rgb(55, 65, 81);
+    --border-radius: .5rem;
+    --letter-spacing: .025rem;
+    --transition: .3s;
+    --line-height: 1.35;
+    --line-height-text: 1.75;
+    --section-spacing: 1.5rem;
+    --box-shadow: 0px 10px 20px rgba(41, 41, 42, .07);
+    --scroll-margin-top: 50px;
+
+    @include mq() {
+        --font-size: 1rem;
+        --section-spacing: 2.5rem;
+        --scroll-margin-top: 80px;
+    }
+}

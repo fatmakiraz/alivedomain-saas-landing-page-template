@@ -1,0 +1,75 @@
+<section class="section hiw" id="hiw">
+    <div class="container">
+        {% include 'global/section-name' with sectionName: 'How It Works' %}
+        <div class="hiw-wrapper">
+            <div class="hiw-card-wrapper">
+                <div class="hiw__content">
+                    <div class="bg-points">
+                        <svg class="icon icon-bg-points">
+                            <use xlink:href="#icon-bg-points"></use>
+                        </svg>
+                    </div>
+                    <div class="hiw__content__title"><mark class="text-bg-color">Add your domains easily.</mark></div>
+                    <p class="hiw__content__desc">Enter the name or URL address of your domain.<br>Information about the domain will be added automatically.</p>
+                    {% include 'global/features-item' with desc: 'Add your domains in bulk' %}
+                    {% include 'global/features-item' with desc: 'Take specific notes to each of the domains ' %}
+                </div>
+
+                <figure class="hiw__image">
+                    <img loading="lazy" src="img/hiw-1.png" alt="Add your domains">
+                </figure>
+            </div>
+            <div class="hiw-card-wrapper">
+                <div class="hiw__content">
+                    <div class="bg-points">
+                        <svg class="icon icon-bg-points">
+                            <use xlink:href="#icon-bg-points"></use>
+                        </svg>
+                    </div>
+                    <div class="hiw__content__title"><mark class="text-bg-color">Track the expiry date</mark><br>of your domains.<br></div>
+                    <p class="hiw__content__desc">Monitor the remaining days until the domain expires.<br>Information about the expiry date of the domain will be up to date. </p>
+                    {% include 'global/features-item' with desc: 'Information about the last check and current expiry date' %}
+                    {% include 'global/features-item' with desc: 'Track all of the expiry dates in calendar view' %}
+                </div>
+
+                <figure class="hiw__image">
+                    <img loading="lazy" src="img/hiw-2.png" alt="Track your domains">
+                </figure>
+            </div>
+            <div class="hiw-card-wrapper">
+                <div class="hiw__content">
+                    <div class="bg-points">
+                        <svg class="icon icon-bg-points">
+                            <use xlink:href="#icon-bg-points"></use>
+                        </svg>
+                    </div>
+                    <div class="hiw__content__title"><mark class="text-bg-color">Get notifications</mark> of the expiry date of your domains.<br></div>
+                    <p class="hiw__content__desc">Get notifications through different channels and at different frequencies.<br>The notification frequency will increase more often closer to the expiry date.</p>
+                    {% include 'global/features-item' with desc: 'Email, Zapier, Telegram, Slack, Discord and Webhook' %}
+                    {% include 'global/features-item' with desc: '90, 60, 45, 30, 15, 7, 5, 3, 2 days and 1 day before' %}
+                </div>
+
+                <figure class="hiw__image">
+                    <img loading="lazy" src="img/hiw-3.png" alt="Notification Channels">
+                </figure>
+            </div>
+            <div class="hiw-card-wrapper">
+                <div class="hiw__content">
+                    <div class="bg-points">
+                        <svg class="icon icon-bg-points">
+                            <use xlink:href="#icon-bg-points"></use>
+                        </svg>
+                    </div>
+                    <div class="hiw__content__title">Send notifications to your customers <mark class="text-bg-color">on your behalf.</mark></div>
+                    <p class="hiw__content__desc">Add the information about your business and create an email template. Add the email address of your customer and your customer's name to each of the domains.<br>Notification emails that send on your behalf will appear as if they’re being sent directly by you. </p>
+                    {% include 'global/features-item' with desc: 'Add your business name, website URL and logo' %}
+                    {% include 'global/features-item' with desc: 'Customize your email template' %}
+                </div>
+
+                <figure class="hiw__image">
+                    <img loading="lazy" src="img/hiw-4.png" alt="Send notifications on your behalf">
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>

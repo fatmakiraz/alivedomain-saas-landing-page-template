@@ -1,0 +1,20 @@
+.features__item {
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+
+    &__desc {
+        font-weight: var(--font-medium);
+        line-height: var(--line-height-text);
+        letter-spacing: var(--letter-spacing);
+        margin-left: .75rem;
+
+        &--bold {
+            font-weight: var(--font-bold);
+        }
+    }
+
+    &+& {
+        margin-top: .65rem;
+    }
+}

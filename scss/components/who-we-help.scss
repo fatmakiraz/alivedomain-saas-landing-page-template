@@ -1,0 +1,55 @@
+.wwh {
+    &__title {
+        font-size: var(--font-size-title);
+        font-weight: var(--font-extrabold);
+        line-height: var(--line-height);
+        margin-bottom: 1.5rem;
+    }
+
+    &-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .icon-absolute {
+            display: none;
+
+            @include mq('desktop') {
+                position: absolute;
+                display: block;
+            }
+        }
+
+        .icon-search {
+            top: 3rem;
+            left: 9rem;
+        }
+
+        .icon-mail {
+            top: 15rem;
+            left: 5rem;
+        }
+
+        .icon-globe {
+            top: 27rem;
+            left: 9rem;
+        }
+
+        .icon-monitor {
+            top: 3rem;
+            right: 9rem;
+        }
+
+        .icon-at-sign {
+            top: 15rem;
+            right: 5rem;
+        }
+
+        .icon-send {
+            top: 27rem;
+            right: 9rem;
+        }
+
+    }
+}

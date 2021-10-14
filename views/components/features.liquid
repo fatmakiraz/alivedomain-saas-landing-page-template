@@ -1,0 +1,20 @@
+<section class="section features" id="features">
+    <div class="container">
+        {% include 'global/section-name' with sectionName: 'Features' %}
+        <div class="features__top">
+            <div class="features__top__title">
+                <mark class="text-bg-color">All-in-one platform</mark> for domain tracking.
+            </div>
+            <div class="features__top__subtitle">
+                Monitor your domains and get notifications of them.
+            </div>
+        </div>
+        <div class="features__card-wrapper">
+            {% include 'global/features-card' with icon: '<svg class="icon"><use xlink:href="#icon-calendar"></use></svg>', title: 'Current Expiry Date', desc: 'Domains are checked weekly. They are checked more often closer to the expiry date.' %}
+            {% include 'global/features-card' with icon: '<svg class="icon"><use xlink:href="#icon-notification"></use></svg>', title: 'Advanced Notification System', desc: 'Notifications are sent at 10 different times and through 6 different channels.' %}
+            {% include 'global/features-card' with icon: '<svg class="icon"><use xlink:href="#icon-home"></use></svg>', title: 'Customizable Dashboard', desc: 'Dashboard can be customized. Saved filters can be sorted and added as a table or widget.' %}
+            {% include 'global/features-card' with icon: '<svg class="icon"><use xlink:href="#icon-filter"></use></svg>', title: 'Create Custom Filters', desc: 'Custom filters can be created with groups, remaining days and expiry date information about the domains.' %}
+            {% include 'global/features-card' with icon: '<svg class="icon"><use xlink:href="#icon-box"></use></svg>', title: 'Group Your Domains', desc: 'Custom groups can be created to manage the domains easily. These groups can be used for the filters.' %}
+            {% include 'global/features-card' with icon: '<svg class="icon"><use xlink:href="#icon-zap-off"></use></svg>', title: 'White Label for Agencies', desc: 'Notification emails can be sent with your own business name, logo and message directly to your customers. ' %}
+        </div>
+</section>

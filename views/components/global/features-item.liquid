@@ -1,0 +1,10 @@
+<div class="features__item">
+    <div class="features__item__icon">
+        <svg class="icon icon-check">
+            <use xlink:href="#icon-check"></use>
+        </svg>
+    </div>
+    <p class="features__item__desc{% if highlighted %} text-bg-color text-bg-color--primary-light{% endif %}{% if bold %} features__item__desc--bold{% endif %}">
+        {{desc}}
+    </p>
+</div>
