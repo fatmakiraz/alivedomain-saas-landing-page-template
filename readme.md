@@ -16,7 +16,7 @@ All images on the landing page are included in the MIT License. Feather Icons us
 
 # Project Structure
 
-CSS codes are included in the scss/pages and scss/components folders.
+CSS codes are included in the scss/components and scss/helper folders.
 
 LiquidJS is used as a template engine.
 Files of the template are in the views folder.
